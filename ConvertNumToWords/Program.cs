@@ -10,7 +10,7 @@ namespace ConvertNumToWords
 The program handles till 9 digits numbers and  
 can be easily extended to 20 digit number */
     using System;
-    class GFG 
+    class Program 
     { 
          static void Main()
         {
