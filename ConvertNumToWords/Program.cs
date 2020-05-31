@@ -24,11 +24,7 @@ can be easily extended to 20 digit number */
             //singleton pattern
             IConvertNumToWords c1 = ConvertNumToWords.GetInstance();
             //Console.WriteLine(c1.convertToWords(n1));           
-            Console.WriteLine(c1.convertToWords(num));
-            Console.WriteLine(c1.convertToWords(0));
-           
-
-        
+            Console.WriteLine(c1.convertToWords(num));  
 
             //Implemenet using extension methods for long type
             // Console.WriteLine(n1.convertToWords());

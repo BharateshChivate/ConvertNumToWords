@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConvertNumToWords
 {
-    public class ConvertNumToWords : IConvertNumToWords
+    public sealed class ConvertNumToWords : IConvertNumToWords
     {
         private static IConvertNumToWords _instance;
 
