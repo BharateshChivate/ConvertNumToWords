@@ -77,6 +77,11 @@ namespace ConvertNumToWords
         {
             try
             {
+                if(n < 0)
+                {
+                    Console.WriteLine("please enter a positive number");
+                    return string .Empty;
+                }
                 // stores word representation of  
                 // given number n
                 StringBuilder wordsFormat = new StringBuilder();

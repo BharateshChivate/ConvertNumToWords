@@ -102,14 +102,14 @@ namespace ConvertNumToWordsTest
             Assert.AreEqual(expected, actual);
         }
 
-        //[TestMethod]
-        //public void convertToWordsTestForNegativeInput()
-        //{
-        //    IConvertNumToWords c1 = ConvertNumToWords.ConvertNumToWords.GetInstance();
-        //    string actual = c1.convertToWords(-9);
-        //    string expected = "ninety nine crore ninety nine lakh ninety nine thousand nine hundred and ninety nine";
-        //    Assert.AreEqual(expected, actual);
-        //}
+        [TestMethod]
+        public void convertToWordsTestForNegativeInput()
+        {
+            IConvertNumToWords c1 = ConvertNumToWords.ConvertNumToWords.GetInstance();
+            string actual = c1.convertToWords(-9);
+            string expected = string.Empty;
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
