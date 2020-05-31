@@ -48,12 +48,19 @@ namespace ConvertNumToWords
 
             return str;
         }
+
+        // this is an extension method for long data type
         public static string convertToWords(this long n)
         {
 
             // stores word representation of  
             // given number n  
             string numToWord = "";
+
+            if (n == 0)
+            {
+                numToWord += "Zero";
+            }
 
             // handles digits at ten millions and  
             // hundred millions places (if any)  

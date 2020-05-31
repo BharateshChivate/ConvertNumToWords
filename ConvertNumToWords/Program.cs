@@ -19,14 +19,14 @@ can be easily extended to 20 digit number */
             // handle more digit number  
             Console.WriteLine("Please Enter a positive number");           
             
-            ulong num = ulong.Parse(Console.ReadLine());
+            long num = long.Parse(Console.ReadLine());
 
             //singleton pattern
             IConvertNumToWords c1 = ConvertNumToWords.GetInstance();
             //Console.WriteLine(c1.convertToWords(n1));           
             Console.WriteLine(c1.convertToWords(num));
             Console.WriteLine(c1.convertToWords(0));
-            // Console.WriteLine(c1.convertToWords(123552342342355));
+           
 
         
 

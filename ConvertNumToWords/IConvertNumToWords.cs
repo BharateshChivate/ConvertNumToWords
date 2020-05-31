@@ -8,6 +8,6 @@ namespace ConvertNumToWords
 {
     public interface IConvertNumToWords
     {
-        string convertToWords(ulong n);
+        string convertToWords(long n);
     }
 }

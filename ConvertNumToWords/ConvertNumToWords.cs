@@ -31,6 +31,7 @@ namespace ConvertNumToWords
 
         }
 
+        // checks if instance is available or not - follows singleton design pattern
         public static IConvertNumToWords GetInstance()
         {
             //The block inside the lock ensures that only one thread enters this block at any given time.
@@ -45,7 +46,7 @@ namespace ConvertNumToWords
             
         }    
 
-        // n is 1- or 2-digit number  
+        // n is 1  or 2-digit number  
         private string numToWords(int n, string s)
         {
             string str = "";
@@ -72,7 +73,7 @@ namespace ConvertNumToWords
         /*
           this function converts number to its equivalent words format
          */
-        public string convertToWords(ulong n)
+        public string convertToWords(long n)
         {
             try
             {
@@ -113,10 +114,14 @@ namespace ConvertNumToWords
 
                 return wordsFormat.ToString();
             }
+            catch(IndexOutOfRangeException ex)
+            {
+                throw new IndexOutOfRangeException(ex.Message);
+            } 
             catch(Exception ex)
             {
                 throw new Exception(ex.Message);
-            }          
+            }
 
             
         }
